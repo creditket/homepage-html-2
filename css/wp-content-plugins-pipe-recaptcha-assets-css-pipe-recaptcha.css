@@ -1,0 +1,352 @@
+
+.rc-pipe-recaptcha {
+  width: 299px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(204, 204, 204);
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px;
+  position: absolute;
+  transition: visibility 0s linear 0s, opacity 0.3s linear 0s;
+  opacity: 1;
+  visibility: visible;
+  z-index: 999999;
+  margin-left: 52px;
+  margin-top: -170px;
+  font-family: Roboto,helvetica,arial,sans-serif;
+}
+.rc-pipe-recaptcha-container {
+  width: 100%;
+  border: 1px solid #d3d3d3;
+  background: #f9f9f9;
+  color: #000;
+  line-height: 0;
+  background-size: 100%;
+}
+.rc-pipe-recaptcha-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.rc-pipe-recaptcha-row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+}
+.rc-pipe-recaptcha-col {
+  flex: 1 0 0%;
+}
+.pipe-recaptcha-element {
+  width: 100%;
+}
+.pipe-recaptcha-image.rotate-1 {
+  transform: rotate(0deg);
+}
+.pipe-recaptcha-image.rotate-2 {
+  transform: rotate(90deg);
+}
+.pipe-recaptcha-image.rotate-3 {
+  transform: rotate(180deg);
+}
+.pipe-recaptcha-image.rotate-4 {
+  transform: rotate(270deg);
+}
+
+.checkmark__circle{stroke-dasharray: 166;stroke-dashoffset: 166;stroke-width: 2;stroke-miterlimit: 10;stroke: #1a73e8;fill: none;animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards}
+.checkmark {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  display: block;
+  stroke-width: 2;
+  stroke: #fff;
+  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+.checkmark__check{transform-origin: 50% 50%;stroke-dasharray: 48;stroke-dashoffset: 48;animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards}@keyframes stroke{100%{stroke-dashoffset: 0}}@keyframes scale{0%, 100%{transform: none}50%{transform: scale3d(1.1, 1.1, 1)}}@keyframes fill{100%{box-shadow: inset 0px 0px 0px 30px #1a73e8}}
+
+.rc-pipe-recaptcha-checkbox svg.checkmark, .rc-pipe-recaptcha-checkbox label.rc-pipe-recaptcha-check-label {
+  display: inline;
+  vertical-align: middle;
+}
+.rc-pipe-recaptcha-check-label{
+  font-family: Roboto,helvetica,arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  cursor: pointer;
+}
+.rc-pipe-recaptcha-row.checkbox-section {
+  padding: 20px 10px;
+}
+.checkbox-container {
+  border-radius: 3px;
+  box-shadow: 0 0 4px 1px rgba(0,0,0,0.08);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0,0,0,0.08);
+  -moz-box-shadow: 0 0 4px 1px rgba(0,0,0,0.08);
+  border: 1px solid #d3d3d3;
+  background: #f9f9f9;
+  color: #000;
+  width: 250px;
+  margin: 10px 0px;
+}
+.rc-pipe-recaptcha-checkbox-rect {
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+  border-radius: 5px;
+  position: relative;
+  top: -0.5px;
+  display: inline-block;
+  border: 2px solid #c1c1c1;
+  cursor: pointer;
+  background-color: #fff;
+}
+.pipe-recaptcha-image.fire-hidrant {
+  position: absolute;
+  margin-top: -24px;
+  margin-left: 13px;
+}
+.pipe-recaptcha-image.indicator {
+  width: 26px;
+  margin: 0 auto -5px 10px;
+}
+.pipe-recaptcha-image {
+  transition: all 0.2s;
+}
+.verify-button-holder {
+  margin: 8px 8px 0 0;
+}
+.pipe-rc-button-default {
+  background: #1a73e8;
+  border: 0;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  font-family: Roboto,helvetica,arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 42px;
+  line-height: 42px;
+  min-width: 100px;
+  padding: 0 10px 0 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+.pipe-recaptcha-button {
+  background-size: 32px 32px;
+  cursor: pointer;
+  height: 44px;
+  opacity: .55;
+  width: 48px;
+  padding: 0;
+  border: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  float: right;
+  position: relative;
+  top: -1px;
+}
+
+#pipe-rc-tutorial-info {
+  background-size: 36px 36px;
+  opacity: 1;
+  font-size: 13px;
+  text-transform: none;
+}
+.loading-quarter-circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 4px solid #c61d1d00;
+  /* position: absolute; */
+  animation: spin 1.2s infinite linear;
+  /* margin-top: -35px; */
+  display: inline-block;
+  vertical-align: middle;
+}
+.loading-quarter-circle::before {
+  content: "";
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  border-right: 4px solid transparent;
+  border-top: 4px solid transparent;
+  border-left: 4px solid #1a73e8;
+  border-bottom: 4px solid #1a73e8;
+  /* border: 1px solid #1a73e8; */
+}
+.pipe-rc-verify-error {
+  color: #dd4b39;
+  font-size: 14px;
+  margin-bottom: 6px;
+  display: none;
+}
+.rc-pipe-recaptcha-checkbox-rect.popupInActive {
+  border: 2px solid #1a73e8;
+}
+.pipe-rc-verify-timeout {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  color: #dd4b39;
+  display: none;
+}
+.pipe-recaptcha-section svg, .pipe-recaptcha-section img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+@keyframes spin {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
+}
+.rc-pipe-recaptcha-arrow{
+  border-color: transparent rgb(204, 204, 204) transparent transparent;
+  border-style: solid;
+  border-width: 11px;
+  border-image: none 100% / 1 / 0 stretch;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  pointer-events: none;
+  margin-top: 140px;
+  z-index: 2000000000;
+  top: 56px;
+  right: 100%;
+}
+.rc-pipe-recaptcha-arrow-bubble{
+  border-color: transparent rgb(255, 255, 255) transparent transparent;
+  border-style: solid;
+  border-width: 10px;
+  border-image: none 100% / 1 / 0 stretch;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  pointer-events: none;
+  margin-top: 141px;
+  z-index: 2000000000;
+  top: 56px;
+  right: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box !important;
+}
+
+
+/*Css tooltip*/
+[data-pr-tooltip] {
+  position: relative;
+  cursor: pointer;
+}
+[data-pr-tooltip]::before, [data-pr-tooltip]::after {
+  line-height: 1;
+  font-size: .9em;
+  pointer-events: none;
+  position: absolute;
+  box-sizing: border-box;
+  display: none;
+  opacity: 0;
+  margin-left: -88px;
+}
+[data-pr-tooltip]:before {
+  content: "";
+  border: 9px solid transparent;
+  z-index: 100;
+}
+[data-pr-tooltip]:after {
+  content: attr(data-pr-tooltip);
+  text-align: center;
+  /*! min-width: 3em; */
+  /*! max-width: 21em; */
+  /*! white-space: nowrap; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 6px 8px;
+  border-radius: 3px;
+  background: #333333;
+  color: #FFFFFF;
+  z-index: 99;
+  width: 250px;
+}
+[data-pr-tooltip]:hover:before,
+[data-pr-tooltip]:hover:after {
+  display: block;
+  opacity: 1;
+}
+[data-pr-tooltip]:not([data-flow])::before,
+[data-pr-tooltip][data-flow="top"]::before {
+  bottom: 100%;
+  border-bottom-width: 0;
+  border-top-color: #333333;
+}
+[data-pr-tooltip]:not([data-flow])::after,
+[data-pr-tooltip][data-flow="top"]::after {
+  bottom: calc(100% + 5px);
+}
+[data-pr-tooltip]:not([data-flow])::before, [tooltip]:not([data-flow])::after,
+[data-pr-tooltip][data-flow="top"]::before,
+[data-pr-tooltip][data-flow="top"]::after {
+  left: 50%;
+  -webkit-transform: translate(-50%, -4px);
+  transform: translate(-50%, -4px);
+}
+[data-pr-tooltip][data-flow="bottom"]::before {
+  bottom: calc(100% - -7px);
+  border-bottom-width: 0;
+  border-top-color: #333333;
+}
+[data-pr-tooltip][data-flow="bottom"]::after {
+  bottom: calc(100% + 15px);
+}
+[data-pr-tooltip][data-flow="bottom"]::after {
+  left: 50%;
+  -webkit-transform: translate(-50%, 8px);
+  transform: translate(-50%, 8px);
+}
+
+[data-pr-tooltip][data-flow="bottom"]::before {
+  left: calc(50% + 87px);
+  -webkit-transform: translate(-50%, 8px);
+  transform: translate(-50%, 8px);
+}
+[data-pr-tooltip][data-flow="left"]::before {
+  top: 50%;
+  border-right-width: 0;
+  border-left-color: #333333;
+  left: calc(0em - 5px);
+  -webkit-transform: translate(-8px, -50%);
+  transform: translate(-8px, -50%);
+}
+[data-pr-tooltip][data-flow="left"]::after {
+  top: 50%;
+  right: calc(100% + 5px);
+  -webkit-transform: translate(-8px, -50%);
+  transform: translate(-8px, -50%);
+}
+[data-pr-tooltip][data-flow="right"]::before {
+  top: 50%;
+  border-left-width: 0;
+  border-right-color: #333333;
+  right: calc(0em - 5px);
+  -webkit-transform: translate(8px, -50%);
+  transform: translate(8px, -50%);
+}
+[data-pr-tooltip][data-flow="right"]::after {
+  top: 50%;
+  left: calc(100% + 5px);
+  -webkit-transform: translate(8px, -50%);
+  transform: translate(8px, -50%);
+}
+[data-pr-tooltip=""]::after, [data-pr-tooltip=""]::before {
+  display: none !important;
+}
+/*This file was exported by "Export WP Page to Static HTML" plugin which created by ReCorp (https://myrecorp.com) */
